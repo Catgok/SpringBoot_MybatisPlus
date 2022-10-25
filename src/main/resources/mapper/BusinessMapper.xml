@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.elm_mybatisplus.dao.BusinessMapper">
+    <select id="queryBusinessById" resultType="com.example.elm_mybatisplus.pojo.Business">
+        select *
+        from business
+        where business_id = #{businessId}
+        <!--   use #{parameter} to use the function's parameter -->
+    </select>
+
+</mapper>
